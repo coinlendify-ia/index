@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Politique de confidentialité - The Mastermind</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --midnight: #0f1419;
+            --slate: #1a1f2e;
+            --gold: #d4af37;
+            --gold-light: #f4d56f;
+            --cream: #faf8f3;
+            --accent: #8b7355;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'DM Sans', sans-serif;
+            background: var(--midnight);
+            color: var(--cream);
+            line-height: 1.7;
+        }
+        
+        .grain-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            opacity: 0.03;
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' /%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' /%3E%3C/svg%3E");
+            z-index: 1000;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        
+        /* Header */
+        header {
+            padding: 2rem 0 1rem;
+            border-bottom: 1px solid rgba(212, 175, 55, 0.2);
+            margin-bottom: 3rem;
+        }
+        
+        .logo {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.5rem;
+            font-weight: 900;
+            color: var(--gold);
+            letter-spacing: 0.05em;
+            text-decoration: none;
+            display: inline-block;
+            transition: color 0.3s ease;
+        }
+        
+        .logo:hover {
+            color: var(--gold-light);
+        }
+        
+        /* Content */
+        .content {
+            background: rgba(26, 31, 46, 0.3);
+            padding: 3rem;
+            border-radius: 16px;
+            border: 1px solid rgba(212, 175, 55, 0.1);
+        }
+        
+        h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5rem;
+            font-weight: 900;
+            color: var(--gold-light);
+            margin-bottom: 1rem;
+        }
+        
+        .last-updated {
+            color: var(--gold);
+            font-size: 0.95rem;
+            margin-bottom: 2rem;
+            opacity: 0.8;
+        }
+        
+        h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.8rem;
+            color: var(--gold);
+            margin-top: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        h3 {
+            font-size: 1.2rem;
+            color: var(--gold-light);
+            margin-top: 1.5rem;
+            margin-bottom: 0.75rem;
+        }
+        
+        p {
+            margin-bottom: 1.2rem;
+            opacity: 0.95;
+        }
+        
+        ul, ol {
+            margin-left: 1.5rem;
+            margin-bottom: 1.2rem;
+        }
+        
+        li {
+            margin-bottom: 0.5rem;
+        }
+        
+        strong {
+            color: var(--gold);
+        }
+        
+        a {
+            color: var(--gold-light);
+            text-decoration: none;
+            border-bottom: 1px solid transparent;
+            transition: border-color 0.3s ease;
+        }
+        
+        a:hover {
+            border-bottom-color: var(--gold-light);
+        }
+        
+        .highlight-box {
+            background: rgba(212, 175, 55, 0.1);
+            border-left: 3px solid var(--gold);
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 8px;
+        }
+        
+        /* Footer */
+        footer {
+            padding: 2rem 0;
+            text-align: center;
+            margin-top: 3rem;
+            border-top: 1px solid rgba(212, 175, 55, 0.1);
+        }
+        
+        .footer-link {
+            color: var(--gold);
+            text-decoration: none;
+            margin: 0 1rem;
+            transition: color 0.3s ease;
+        }
+        
+        .footer-link:hover {
+            color: var(--gold-light);
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .content {
+                padding: 2rem 1.5rem;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+            
+            h2 {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="grain-overlay"></div>
+    
+    <header>
+        <div class="container">
+            <a href="index.html" class="logo">THE MASTERMIND</a>
+        </div>
+    </header>
+    
+    <main>
+        <div class="container">
+            <div class="content">
+                <h1>Politique de confidentialité</h1>
+                <p class="last-updated">Dernière mise à jour : 15 janvier 2025</p>
+                
+                <p>Chez The Mastermind, nous prenons très au sérieux la protection de vos données personnelles. Cette politique de confidentialité décrit comment nous collectons, utilisons et protégeons vos informations lors de l'utilisation de notre application mobile.</p>
+                
+                <h2>1. Informations que nous collectons</h2>
+                
+                <h3>1.1 Informations collectées automatiquement</h3>
+                <ul>
+                    <li><strong>Données de jeu :</strong> Statistiques de performance, scores, niveaux complétés, temps de jeu</li>
+                    <li><strong>Données techniques :</strong> Type d'appareil, version du système d'exploitation, identifiant unique de l'appareil</li>
+                    <li><strong>Données d'utilisation :</strong> Fréquence d'utilisation de l'application, fonctionnalités utilisées, crashs éventuels</li>
+                </ul>
+                
+                <h3>1.2 Informations que vous nous fournissez</h3>
+                <ul>
+                    <li><strong>Compte utilisateur :</strong> Pseudonyme, adresse e-mail (si création de compte)</li>
+                    <li><strong>Préférences :</strong> Paramètres de l'application, préférences de jeu</li>
+                </ul>
+                
+                <div class="highlight-box">
+                    <p><strong>Note importante :</strong> The Mastermind ne collecte aucune donnée sensible telle que vos coordonnées bancaires, votre localisation précise ou vos contacts.</p>
+                </div>
+                
+                <h2>2. Utilisation de vos données</h2>
+                
+                <p>Nous utilisons vos données pour :</p>
+                <ul>
+                    <li>Fournir et améliorer les fonctionnalités de l'application</li>
+                    <li>Sauvegarder votre progression et vos statistiques</li>
+                    <li>Personnaliser votre expérience de jeu</li>
+                    <li>Analyser l'utilisation de l'application pour en améliorer les performances</li>
+                    <li>Diagnostiquer et corriger les problèmes techniques</li>
+                    <li>Vous envoyer des notifications importantes concernant l'application (avec votre consentement)</li>
+                </ul>
+                
+                <h2>3. Partage de vos données</h2>
+                
+                <p>Nous ne vendons jamais vos données personnelles. Nous pouvons partager certaines données avec :</p>
+                
+                <h3>3.1 Fournisseurs de services</h3>
+                <ul>
+                    <li><strong>Services d'hébergement :</strong> Pour stocker vos données de jeu de manière sécurisée</li>
+                    <li><strong>Services d'analyse :</strong> Pour comprendre comment l'application est utilisée (données anonymisées)</li>
+                    <li><strong>Services de notifications :</strong> Pour vous envoyer des notifications push (si vous y consentez)</li>
+                </ul>
+                
+                <h3>3.2 Obligations légales</h3>
+                <p>Nous pouvons divulguer vos informations si la loi l'exige ou pour protéger nos droits légaux.</p>
+                
+                <h2>4. Sécurité de vos données</h2>
+                
+                <p>Nous mettons en œuvre des mesures de sécurité appropriées pour protéger vos données contre tout accès non autorisé, modification, divulgation ou destruction :</p>
+                <ul>
+                    <li>Chiffrement des données sensibles en transit et au repos</li>
+                    <li>Accès restreint aux données personnelles</li>
+                    <li>Surveillance régulière de nos systèmes</li>
+                    <li>Audits de sécurité périodiques</li>
+                </ul>
+                
+                <h2>5. Conservation des données</h2>
+                
+                <p>Nous conservons vos données personnelles aussi longtemps que nécessaire pour vous fournir nos services ou jusqu'à ce que vous supprimiez votre compte. Les données anonymisées peuvent être conservées plus longtemps à des fins statistiques.</p>
+                
+                <h2>6. Vos droits</h2>
+                
+                <p>Conformément au RGPD et aux lois applicables sur la protection des données, vous disposez des droits suivants :</p>
+                <ul>
+                    <li><strong>Droit d'accès :</strong> Obtenir une copie de vos données personnelles</li>
+                    <li><strong>Droit de rectification :</strong> Corriger des données inexactes ou incomplètes</li>
+                    <li><strong>Droit à l'effacement :</strong> Supprimer vos données personnelles</li>
+                    <li><strong>Droit à la portabilité :</strong> Recevoir vos données dans un format structuré</li>
+                    <li><strong>Droit d'opposition :</strong> Vous opposer au traitement de vos données</li>
+                    <li><strong>Droit de limitation :</strong> Limiter le traitement de vos données</li>
+                </ul>
+                
+                <p>Pour exercer ces droits, contactez-nous à l'adresse : <a href="mailto:privacy@themastermind.app">privacy@themastermind.app</a></p>
+                
+                <h2>7. Données des mineurs</h2>
+                
+                <p>Notre application est accessible à tous les âges. Nous ne collectons pas sciemment de données personnelles auprès d'enfants de moins de 13 ans sans le consentement parental. Si vous pensez qu'un enfant nous a fourni des données personnelles sans consentement, contactez-nous immédiatement.</p>
+                
+                <h2>8. Cookies et technologies similaires</h2>
+                
+                <p>L'application peut utiliser des technologies de suivi locales (équivalents des cookies) pour :</p>
+                <ul>
+                    <li>Mémoriser vos préférences</li>
+                    <li>Sauvegarder votre progression</li>
+                    <li>Améliorer les performances de l'application</li>
+                </ul>
+                
+                <p>Vous pouvez gérer ces préférences dans les paramètres de l'application.</p>
+                
+                <h2>9. Modifications de cette politique</h2>
+                
+                <p>Nous pouvons mettre à jour cette politique de confidentialité de temps en temps. Nous vous informerons de tout changement significatif par notification dans l'application ou par e-mail. La date de "dernière mise à jour" en haut de cette page indique quand la politique a été révisée pour la dernière fois.</p>
+                
+                <h2>10. Services tiers</h2>
+                
+                <p>L'application peut contenir des liens vers des services tiers (comme les plateformes de téléchargement). Nous ne sommes pas responsables des pratiques de confidentialité de ces services. Nous vous encourageons à lire leurs politiques de confidentialité.</p>
+                
+                <h2>11. Transferts internationaux de données</h2>
+                
+                <p>Vos données peuvent être transférées et stockées sur des serveurs situés en dehors de votre pays de résidence. Nous assurons que ces transferts respectent les réglementations applicables en matière de protection des données.</p>
+                
+                <h2>12. Contact</h2>
+                
+                <p>Pour toute question concernant cette politique de confidentialité ou pour exercer vos droits, vous pouvez nous contacter :</p>
+                
+                <ul>
+                    <li><strong>Par e-mail :</strong> <a href="mailto:privacy@themastermind.app">privacy@themastermind.app</a></li>
+                    <li><strong>Par e-mail (support) :</strong> <a href="mailto:support@themastermind.app">support@themastermind.app</a></li>
+                </ul>
+                
+                <div class="highlight-box">
+                    <p><strong>Engagement de transparence :</strong> Nous nous engageons à répondre à toutes vos demandes dans un délai de 30 jours maximum.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <footer>
+        <div class="container">
+            <a href="index.html" class="footer-link">Retour à l'accueil</a>
+            <a href="mailto:support@themastermind.app" class="footer-link">Contact</a>
+            <p style="margin-top: 1rem; opacity: 0.6; font-size: 0.9rem;">© 2025 The Mastermind. Tous droits réservés.</p>
+        </div>
+    </footer>
+</body>
+</html>
